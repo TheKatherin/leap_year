@@ -1,3 +1,12 @@
+var leapYear = function(year) {
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// jQuery user interface logic here.
 $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
     event.preventDefault();
@@ -6,9 +15,3 @@ $(document).ready(function() {
     $("#result").text(result);
   });
 });
-
-var leapYear = function(year) {
-  return false;
-};
-
-// jQuery user interface logic here.
